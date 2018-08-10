@@ -1,0 +1,30 @@
+@甄强 10007714/111111
+github 邮箱-13554058739-ziyou
+https://github.com/yalikesi/springboot.git
+
+第一步--设置连接用户名
+git config --global user.name "yalikesi"
+git config --global user.email "593820298@qq.com"
+第二步生成秘钥
+ssh -keygen -t rsa -C "593820298@qq.com"
+第三步
+github设置秘钥
+//测试连接
+ssh git@github.com
+
+
+
+//初始化仓库（第一建仓库用）
+git  init 
+//提交代码 第一步
+git add .
+//提交文件到本地仓库
+git commit -m "注释信息"
+（第一次需要，以后就不用这步骤）
+git remote add origin git@github.com:wangjiax9/beautifulDay.git
+//上传本带代码到github仓库
+ git push -u origin master
+ 
+git add .
+git commit -m "注释信息"
+git push -u origin master
